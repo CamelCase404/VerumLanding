@@ -321,7 +321,7 @@
                 font-weight: 600;
             }
 
-            /* Buttons — subtle hover lift, no cursor tracking */
+            /* Buttons */
             .btn {
                 display: inline-flex;
                 align-items: center;
@@ -759,7 +759,7 @@
                 gap: 8px;
             }
 
-            /* Hero with orchestrated entrance */
+            /* Hero */
             .hero {
                 padding: 76px 0 100px;
                 position: relative;
@@ -776,16 +776,16 @@
                 gap: 72px;
                 align-items: center;
             }
-            .hero h1 {
+            .hero h2 {
                 margin-bottom: 24px;
             }
-            .hero h1 em {
+            .hero h2 em {
                 font-style: normal;
                 color: var(--accent);
                 position: relative;
                 display: inline-block;
             }
-            .hero h1 em::after {
+            .hero h2 em::after {
                 content: "";
                 position: absolute;
                 left: 0;
@@ -836,12 +836,12 @@
                 line-height: 1.45;
             }
 
-            /* Hero entrance — orchestrated CSS timeline */
+            /* Hero entrance */
             .hero .eyebrow {
                 opacity: 0;
                 animation: hero-in 0.7s var(--ease) 0.05s forwards;
             }
-            .hero h1 {
+            .hero h2 {
                 opacity: 0;
                 animation: hero-in 0.8s var(--ease) 0.15s forwards;
             }
@@ -1217,7 +1217,6 @@
                 background: var(--surface-2);
             }
 
-            /* Word reveal */
             .word-reveal {
                 display: inline-block;
                 overflow: hidden;
@@ -1234,7 +1233,6 @@
                 transform: translateY(0);
             }
 
-            /* Marquee */
             .marquee {
                 overflow: hidden;
                 position: relative;
@@ -1276,7 +1274,6 @@
                 white-space: nowrap;
             }
 
-            /* Steps */
             .steps {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -1315,7 +1312,6 @@
                 letter-spacing: -0.003em;
             }
 
-            /* Stages */
             .stages {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -1385,7 +1381,6 @@
                 font-weight: 500;
             }
 
-            /* Connector flow */
             .flow-connector {
                 position: relative;
                 height: 2px;
@@ -1418,7 +1413,6 @@
                 }
             }
 
-            /* Levels */
             .levels {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -1518,7 +1512,6 @@
                 order: 2;
             }
 
-            /* Order mock */
             .order-mock {
                 background: var(--surface);
                 border: 1px solid var(--line);
@@ -1633,7 +1626,6 @@
                 flex-shrink: 0;
             }
 
-            /* Stats + sparkline */
             .stats-grid {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
@@ -1701,7 +1693,6 @@
                 stroke-dashoffset: 0;
             }
 
-            /* Compare */
             .compare {
                 background: var(--surface);
                 border: 1px solid var(--line);
@@ -1764,7 +1755,6 @@
                 box-shadow: 0 0 0 2px var(--accent-line);
             }
 
-            /* Pricing */
             .pricing-grid {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -1938,7 +1928,6 @@
                 font-weight: 600;
             }
 
-            /* Calculator */
             .calculator {
                 background: var(--surface);
                 border: 1px solid var(--line);
@@ -2035,7 +2024,6 @@
                 font-variant-numeric: tabular-nums;
             }
 
-            /* Testimonials */
             .testimonials {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -2091,7 +2079,6 @@
                 color: var(--ink-3);
             }
 
-            /* FAQ */
             .faq-list {
                 display: flex;
                 flex-direction: column;
@@ -2157,7 +2144,6 @@
                 color: var(--ink-2);
             }
 
-            /* Blog */
             .blog-grid {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -2258,7 +2244,6 @@
                 flex-wrap: wrap;
             }
 
-            /* Team */
             .team {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
@@ -2303,7 +2288,6 @@
                 line-height: 1.55;
             }
 
-            /* Timeline — draw on scroll */
             .timeline {
                 position: relative;
                 padding-left: 32px;
@@ -2364,7 +2348,6 @@
                 line-height: 1.6;
             }
 
-            /* CTA band */
             .cta-band {
                 background: var(--ink);
                 border-radius: var(--radius-xl);
@@ -2396,7 +2379,6 @@
                 pointer-events: none;
             }
 
-            /* Contact */
             .contact-grid {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -2436,7 +2418,6 @@
                 margin-top: 4px;
             }
 
-            /* Screen / auth */
             .screen {
                 min-height: 100vh;
                 min-height: 100dvh;
@@ -2620,7 +2601,6 @@
                 text-decoration: underline;
             }
 
-            /* Dashboard */
             .dash {
                 display: grid;
                 grid-template-columns: 240px 1fr;
@@ -2966,7 +2946,6 @@
                 line-height: 1.5;
             }
 
-            /* Ring progress */
             .ring-wrap {
                 display: flex;
                 align-items: center;
@@ -3025,7 +3004,6 @@
                 line-height: 1.5;
             }
 
-            /* Notifications, chat, palette, modal, toast */
             .notif-overlay {
                 position: fixed;
                 inset: 0;
@@ -3567,7 +3545,6 @@
                 gap: 12px;
             }
 
-            /* Utility */
             .scroll-progress {
                 position: fixed;
                 top: 0;
@@ -4234,9 +4211,7 @@
                 opacity: 1;
             }
 
-            /* ============================================================
-   RESPONSIVE — tablet
-   ============================================================ */
+            /* RESPONSIVE — tablet */
             @media (max-width: 1100px) {
                 .wrap,
                 .wrap-narrow,
@@ -4284,7 +4259,7 @@
                     grid-column: 1 / -1;
                 }
                 .stats-grid {
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: repeat(1fr, 1fr, 1fr);
                 }
                 .blog-grid {
                     grid-template-columns: 1fr 1fr;
@@ -4356,9 +4331,7 @@
                 }
             }
 
-            /* ============================================================
-   RESPONSIVE — small tablet / large phone
-   ============================================================ */
+            /* RESPONSIVE — small tablet / large phone */
             @media (max-width: 860px) {
                 .pricing-grid {
                     grid-template-columns: 1fr;
@@ -4394,9 +4367,7 @@
                 }
             }
 
-            /* ============================================================
-   RESPONSIVE — phone
-   ============================================================ */
+            /* RESPONSIVE — phone */
             @media (max-width: 640px) {
                 :root {
                     --nav-h: 56px;
@@ -4421,7 +4392,7 @@
                 .hero-grid {
                     gap: 40px;
                 }
-                .hero h1 {
+                .hero h2 {
                     margin-bottom: 18px;
                 }
                 .hero .lede {
@@ -4735,9 +4706,7 @@
                 }
             }
 
-            /* ============================================================
-   RESPONSIVE — very small phone
-   ============================================================ */
+            /* RESPONSIVE — very small phone */
             @media (max-width: 380px) {
                 .wrap,
                 .wrap-narrow,
@@ -4787,9 +4756,7 @@
                 }
             }
 
-            /* ============================================================
-   Landscape phone
-   ============================================================ */
+            /* Landscape phone */
             @media (max-width: 900px) and (orientation: landscape) {
                 .hero {
                     padding: 32px 0 40px;
@@ -4804,9 +4771,6 @@
                 }
             }
 
-            /* ============================================================
-   Hover only on devices that support it
-   ============================================================ */
             @media (hover: none) {
                 .btn:hover {
                     transform: none;
@@ -4849,12 +4813,8 @@
                     transform: none !important;
                 }
             }
-            /* ============================================================
-               MOBILE CENTERING FIX — добавляет центрирование и убирает
-               лишние пустоты справа на маленьких экранах
-               ============================================================ */
 
-            /* 1. Глобально: всё центрируется, ничего не вылезает */
+            /* MOBILE CENTERING FIX */
             html,
             body {
                 max-width: 100%;
@@ -4866,8 +4826,6 @@
                 max-width: 100%;
                 overflow-x: hidden;
             }
-
-            /* 2. Контейнеры — симметричные отступы, автоцентровка */
             .wrap,
             .wrap-narrow,
             .wrap-wide {
@@ -4875,8 +4833,6 @@
                 margin-right: auto;
                 width: 100%;
             }
-
-            /* 3. Все ряды переносятся и центрируются */
             .row,
             .row-between,
             .row-wrap {
@@ -4887,7 +4843,6 @@
                     justify-content: flex-start;
                     gap: 10px;
                 }
-                /* Секционные заголовки — по центру на мобильных */
                 .section-head {
                     margin-left: auto;
                     margin-right: auto;
@@ -4905,8 +4860,6 @@
                     margin-left: auto;
                     margin-right: auto;
                 }
-
-                /* Карточки на всю ширину, без прижатия */
                 .card,
                 .stage,
                 .level,
@@ -4925,8 +4878,6 @@
                     margin-left: 0;
                     margin-right: 0;
                 }
-
-                /* Внутренние заголовки карточек — не разъезжаются */
                 .card-head {
                     flex-direction: column;
                     align-items: flex-start;
@@ -4936,8 +4887,6 @@
                 .card-head .sub {
                     width: 100%;
                 }
-
-                /* Строки ключ-значение — переносятся, значение под ключом */
                 .extract-row {
                     flex-direction: column;
                     align-items: flex-start;
@@ -4948,8 +4897,6 @@
                     text-align: left;
                     width: 100%;
                 }
-
-                /* Матчи — аватар + текст + скор, кнопки на всю ширину */
                 .match {
                     flex-wrap: wrap;
                     align-items: flex-start;
@@ -4967,8 +4914,6 @@
                 .match .btn-icon {
                     flex: 1 1 auto;
                 }
-
-                /* Офферы — вертикально */
                 .offer {
                     flex-direction: column;
                     align-items: stretch;
@@ -4977,8 +4922,6 @@
                 .offer > div {
                     text-align: left !important;
                 }
-
-                /* Профиль-статус — вертикально, кнопка на всю ширину */
                 .profile-status {
                     flex-direction: column;
                     align-items: stretch;
@@ -4986,14 +4929,10 @@
                 .profile-status .btn {
                     width: 100%;
                 }
-
-                /* Комиссия — вертикально */
                 .commission-notice {
                     flex-direction: column;
                     align-items: flex-start;
                 }
-
-                /* Кольцо — по центру */
                 .ring-wrap {
                     flex-direction: column;
                     align-items: center;
@@ -5002,8 +4941,6 @@
                 .ring-meta {
                     text-align: center;
                 }
-
-                /* Кнопки в hero — на всю ширину */
                 .hero-cta {
                     flex-direction: column;
                     width: 100%;
@@ -5011,8 +4948,6 @@
                 .hero-cta > * {
                     width: 100%;
                 }
-
-                /* Статистика в hero — ровно 2 колонки */
                 .hero-meta {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
@@ -5022,8 +4957,6 @@
                 .hero-stat {
                     flex: none;
                 }
-
-                /* Все grid'ы — 1 колонка, элементы на всю ширину */
                 .stats-grid,
                 .blog-grid,
                 .team,
@@ -5045,9 +4978,6 @@
                     grid-column: auto !important;
                 }
             }
-
-            /* 4. Сравнительные таблицы — на мобильных превращаем в карточки,
-                  чтобы не было горизонтального скролла и «прижатия влево» */
             @media (max-width: 640px) {
                 .compare {
                     overflow: visible;
@@ -5103,14 +5033,10 @@
                 .compare-row .cell.verum::before {
                     color: var(--accent);
                 }
-
-                /* Модалка сравнения карточек — 1 колонка */
                 .compare-cards {
                     grid-template-columns: 1fr !important;
                 }
             }
-
-            /* 5. Тулбар — все элементы на всю ширину */
             @media (max-width: 640px) {
                 .toolbar {
                     flex-direction: column;
@@ -5126,8 +5052,6 @@
                 .search-bar {
                     max-width: 100% !important;
                 }
-
-                /* Кнопки «Назад/Далее» в визарде — на всю ширину */
                 #wiz-prev,
                 #wiz-next {
                     width: 100%;
@@ -5135,8 +5059,6 @@
                 .row.gap-12:has(#wiz-prev) {
                     flex-direction: column-reverse;
                 }
-
-                /* Футер — колонки по центру */
                 .footer-col a {
                     text-align: left;
                 }
@@ -5145,28 +5067,18 @@
                     align-items: center;
                     text-align: center;
                 }
-
-                /* Контакты — по центру текста */
                 .contact-info-item {
                     padding: 16px 0;
                 }
-
-                /* Dash сайдбар — табы по центру */
                 .side-nav {
                     justify-content: flex-start;
                 }
-
-                /* Табы на мобильных не переносятся, а скроллятся */
                 .tabs {
                     width: 100%;
                 }
-
-                /* Кнопки в модалке — на всю ширину */
                 .modal-foot .btn {
                     width: 100%;
                 }
-
-                /* CTA-band — кнопки на всю ширину */
                 .cta-band > div:last-child {
                     width: 100%;
                     flex-direction: column;
@@ -5174,14 +5086,10 @@
                 .cta-band .btn {
                     width: 100%;
                 }
-
-                /* Kanban — карточки по центру */
                 .kanban-col {
                     width: 100%;
                 }
             }
-
-            /* 6. Мелкие фиксы для очень узких экранов */
             @media (max-width: 380px) {
                 .hero-meta {
                     grid-template-columns: 1fr;
@@ -5191,14 +5099,10 @@
                     align-items: flex-start;
                 }
             }
-
-            /* 7. Принудительная центровка всего контента в .dash-main */
             .dash-main {
                 margin-left: auto;
                 margin-right: auto;
             }
-
-            /* 8. Убираем любые горизонтальные оверфлоу */
             * {
                 min-width: 0;
             }
@@ -5209,9 +5113,6 @@
                 max-width: 100%;
                 height: auto;
             }
-            /* ============================================================
-               КРАСИВЫЙ HERO-META НА МОБИЛЬНЫХ
-               ============================================================ */
             @media (max-width: 640px) {
                 .hero-meta {
                     display: flex;
@@ -5223,7 +5124,6 @@
                     padding-top: 24px;
                     border-top: 1px solid var(--line);
                 }
-
                 .hero-stat {
                     display: flex;
                     align-items: center;
@@ -5234,12 +5134,10 @@
                     flex: none;
                     width: 100%;
                 }
-
                 .hero-stat:last-child {
                     border-bottom: none;
                     padding-bottom: 0;
                 }
-
                 .hero-stat .n {
                     font-size: 22px;
                     margin-bottom: 0;
@@ -5247,15 +5145,12 @@
                     text-align: left;
                     min-width: 90px;
                 }
-
                 .hero-stat .l {
                     font-size: 13px;
                     text-align: right;
                     line-height: 1.4;
                     color: var(--ink-2);
                 }
-
-                /* Убираем <br> в описаниях на мобилке, чтобы текст шел в одну строку */
                 .hero-stat .l br {
                     display: none;
                 }
@@ -5357,15 +5252,6 @@
         <div id="modal-root"></div>
 
         <script>
-            /* ============================================================================
-   Верум — purposeful animations version.
-   Removed: mouse spotlight, magnetic buttons, tilt, ripple, hero particles,
-   cursor-following tooltips.
-   Kept/added: scroll reveal, word-by-word headings, timeline draw,
-   animated counters, sparklines, rings, dividers, sequential highlights,
-   sparkline stat cards, orchestrated hero entrance, confetti, transitions.
-   ============================================================================ */
-
             const $ = (s, r = document) => r.querySelector(s);
             const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
 
@@ -5373,9 +5259,6 @@
             const THEME_KEY = "verum_theme";
             const SOUND_KEY = "verum_sound";
 
-            /* ----------------------------------------------------------------------------
-   Animation engine
-   ---------------------------------------------------------------------------- */
             const Anim = {
                 ease: {
                     outCubic: (t) => 1 - Math.pow(1 - t, 3),
@@ -5431,9 +5314,6 @@
                 },
             };
 
-            /* ----------------------------------------------------------------------------
-   Sound engine (tiny UI chirps)
-   ---------------------------------------------------------------------------- */
             const Sound = {
                 enabled: (() => {
                     try {
@@ -5492,9 +5372,6 @@
                 },
             };
 
-            /* ----------------------------------------------------------------------------
-   Confetti — fires only on real successes
-   ---------------------------------------------------------------------------- */
             function confetti(x, y) {
                 const canvas = $("#confetti-canvas");
                 if (!canvas) return;
@@ -5559,9 +5436,6 @@
                 draw();
             }
 
-            /* ----------------------------------------------------------------------------
-   State
-   ---------------------------------------------------------------------------- */
             const DEFAULT_STATE = {
                 view: "landing",
                 user: null,
@@ -5692,9 +5566,6 @@
                 }, ms);
             }
 
-            /* ----------------------------------------------------------------------------
-   Mock data
-   ---------------------------------------------------------------------------- */
             const MOCK_SPECIALISTS = [
                 {
                     id: "sp-1",
@@ -6026,9 +5897,6 @@
                 down: "M0,4 L12,8 L24,10 L36,12 L48,16 L60,18 L72,22 L80,26",
             };
 
-            /* ----------------------------------------------------------------------------
-   Theme / sound
-   ---------------------------------------------------------------------------- */
             function getTheme() {
                 try {
                     return localStorage.getItem(THEME_KEY) || "light";
@@ -6056,9 +5924,6 @@
                 toast(cur === "dark" ? "Светлая тема" : "Тёмная тема");
             }
 
-            /* ----------------------------------------------------------------------------
-   Router
-   ---------------------------------------------------------------------------- */
             function go(view, opts = {}) {
                 if (opts.sideTab) state.sideTab = opts.sideTab;
                 state.view = view;
@@ -6079,9 +5944,6 @@
                 window.scrollTo({ top: 0, behavior: "instant" });
             }
 
-            /* ----------------------------------------------------------------------------
-   Drawer / notifications / chat / palette
-   ---------------------------------------------------------------------------- */
             function openDrawer() {
                 state.drawerOpen = true;
                 $("#drawer")?.classList.add("open");
@@ -6461,9 +6323,6 @@
   `);
             }
 
-            /* ----------------------------------------------------------------------------
-   Modal
-   ---------------------------------------------------------------------------- */
             function openModal(content, opts = {}) {
                 const root = $("#modal-root");
                 if (!root) return;
@@ -6485,9 +6344,6 @@
                 document.body.style.overflow = "";
             }
 
-            /* ----------------------------------------------------------------------------
-   Render root
-   ---------------------------------------------------------------------------- */
             function render() {
                 const app = $("#app");
                 switch (state.view) {
@@ -6669,9 +6525,6 @@
                 btn.setAttribute("data-tooltip", "Уведомления");
             }
 
-            /* ----------------------------------------------------------------------------
-   Shared layout
-   ---------------------------------------------------------------------------- */
             function navHtml() {
                 const authed = !!state.user;
                 const links = [
@@ -6746,9 +6599,6 @@
   </footer>`;
             }
 
-            /* ============================================================================
-   Landing
-   ============================================================================ */
             function viewLanding() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -6756,17 +6606,9 @@
     <section class="hero" id="hero">
       <div class="wrap"><div class="hero-grid">
         <div>
-          <span class="eyebrow" style="display:block;margin-bottom:22px">Платформа проверенных IT-специалистов</span>
-          <h1 class="display">Навыки <em>проверены</em>,<br>а не заявлены</h1>
-          <p class="lede">
-            Верум оценивает, как специалист проектирует архитектуру, ревьюит код ИИ и адаптируется
-            к изменению требований. Заказчик получает готовый шортлист из тех, кто
-            действительно подходит под задачу.
-          </p>
-          <div class="hero-cta">
-            <button class="btn btn-accent btn-lg" data-go="auth" data-role="client">Найти специалиста</button>
-            <button class="btn btn-ghost btn-lg" data-go="auth" data-role="specialist">Собрать профиль</button>
-          </div>
+          <h1 class="eyebrow" style="display:block;margin-bottom:22px">Платформа проверенных IT-специалистов</h1>
+          <h2 class="display" style="font-size:clamp(30px, 6vw, 64px);letter-spacing:-0.042em">Навыки <em>проверены</em>,<br>а не заявлены</h2>
+
           <div class="hero-meta">
             <div class="hero-stat"><div class="n">0 ₽</div><div class="l">за публикацию<br>и базовый подбор</div></div>
             <div class="hero-stat"><div class="n"><span class="counter-value" data-count="7" data-suffix="%">0%</span></div><div class="l">комиссия платформы<br>с годового оклада</div></div>
@@ -6800,111 +6642,11 @@
       </div></div>
     </section>
 
-    <section class="section bg-alt">
-      <div class="wrap">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow">Проблема</span>
-          <h2 class="display" data-words>Порог входа упал. Вайбкодеры заполнили рынок</h2>
-          <p class="lede">ИИ пишет код за секунды, но человек часто не понимает, что получил.
-            Внешне рабочий код ломается под нагрузкой, а бизнес теряет деньги и время на переделку.</p>
-        </div>
-        <div class="stages">
-          <div class="stage" data-reveal data-delay="1">
-            <div class="stage-num">01</div><h3>ИИ изменил правила</h3>
-            <div class="sub">Роль разработчика сместилась</div>
-            <p>Программист теперь формулирует задачу для нейросети, описывает контекст
-              и архитектуру, а затем критически оценивает результат.</p>
-          </div>
-          <div class="stage" data-reveal data-delay="2">
-            <div class="stage-num">02</div><h3>Резюме не гарантируют</h3>
-            <div class="sub">Портфолио генерируется за вечер</div>
-            <p>Отзывы накручиваются, а портфолио на GitHub можно собрать с помощью того
-              же ИИ. Существующие биржи проверяют людей так же, как 10 лет назад.</p>
-          </div>
-          <div class="stage" data-reveal data-delay="3">
-            <div class="stage-num">03</div><h3>Бизнес теряет деньги</h3>
-            <div class="sub">Найм превращается в лотерею</div>
-            <p>Компания платит за специалиста, а через неделю получает падающий сервис
-              и переделку. Средний чек ошибки найма — месяцы и десятки тысяч рублей.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow">Наше решение</span>
-          <h2 class="display" data-words>Три этапа вместо десяти переписок</h2>
-          <p class="lede">Мы проверяем не память и не синтаксис, а реальные инженерные навыки,
-            которые нужны в 2026 году: проектирование, ревью ИИ-кода и адаптация.</p>
-        </div>
-        <div class="flow-connector" data-reveal></div>
-        <div class="stages">
-          <div class="stage" data-reveal data-delay="1">
-            <div class="stage-num">01</div><h3>Архитектура</h3>
-            <div class="sub">Проектирование по требованиям</div>
-            <p>Кандидат получает бизнес-требования и описывает компоненты системы,
-              схему данных, обработку отказов и компромиссы.</p>
-            <span class="stage-tag">Проверяем системное мышление</span>
-          </div>
-          <div class="stage" data-reveal data-delay="2">
-            <div class="stage-num">02</div><h3>Ревью кода ИИ</h3>
-            <div class="sub">Поиск дефектов в сгенерированном коде</div>
-            <p>Кандидат получает код от нейросети и должен найти скрытые дефекты,
-              расставить приоритеты и предложить конкретные фиксы.</p>
-            <span class="stage-tag">Проверяем критическое мышление</span>
-          </div>
-          <div class="stage" data-reveal data-delay="3">
-            <div class="stage-num">03</div><h3>Адаптация</h3>
-            <div class="sub">Изменение требований на ходу</div>
-            <p>ИИ резко меняет требования — нагрузка выросла в десять раз, нужна
-              идемпотентность. Кандидат объясняет, что сломается и как это перестроить.</p>
-            <span class="stage-tag">Проверяем гибкость мышления</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section bg-alt">
-      <div class="wrap">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow">Как это работает</span>
-          <h2 class="display" data-words>От регистрации до оффера — три шага</h2>
-        </div>
-        <div class="steps">
-          <div class="step" data-reveal data-delay="1">
-            <span class="n">01</span><h3>Специалист собирает профиль</h3>
-            <p>Подключает GitHub, пишет короткий комментарий о себе. Система анализирует
-              репозитории, оценивает качество кода и сверяет заявленное с фактическим.</p>
-          </div>
-          <div class="step" data-reveal data-delay="2">
-            <span class="n">02</span><h3>Проходит проверку</h3>
-            <p>Три этапа — архитектура, ревью кода ИИ, адаптация к новым требованиям.
-              Уровень проверки зависит от стека и опыта специалиста.</p>
-          </div>
-          <div class="step" data-reveal data-delay="3">
-            <span class="n">03</span><h3>Заказчик получает шортлист</h3>
-            <p>Публикует афишу, система разбирает требования и подбирает специалистов
-              по стеку, уровню и опыту работы с ИИ. Финальный выбор — за компанией.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section">
       <div class="wrap"><div class="split">
         <div data-reveal="left">
           <span class="eyebrow" style="display:block;margin-bottom:16px">Для заказчиков</span>
           <h2 class="display" style="margin-bottom:20px" data-words>Опишите задачу — получите шортлист</h2>
-          <p class="lede" style="margin-bottom:26px">Не нужно перебирать двадцать портфолио и придумывать тестовые.
-            Напишите афишу своими словами — система разберёт требования и подберёт людей под вашу задачу.</p>
-          <ul class="level-list" style="margin-bottom:26px">
-            <li>Разбор афиши: стек, уровень, формат, сроки</li>
-            <li>Оценка потребности в ИИ-навыках под задачу</li>
-            <li>Ранжирование специалистов по релевантности</li>
-            <li>Прозрачная причина совпадения для каждого кандидата</li>
-          </ul>
           <button class="btn btn-accent btn-lg" data-go="auth" data-role="client">Создать заказ</button>
         </div>
         <div class="order-mock" data-reveal="right" data-delay="2">
@@ -6934,49 +6676,7 @@
       </div></div>
     </section>
 
-    <section class="section bg-alt">
-      <div class="wrap">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow">Сравнение</span>
-          <h2 class="display" data-words>Почему это лучше существующих бирж</h2>
-          <p class="lede">Upwork, Kwork, FL.ru проверяют навыки так же, как 10 лет назад.
-            Мы делаем то, чего не делают они.</p>
-        </div>
-        <div class="compare" data-reveal data-compare>
-          <div class="compare-scroll">
-            <div class="compare-head"><div>Параметр</div><div>Биржи</div><div>ATS-системы</div><div class="verum">Верум</div></div>
-            ${[
-                [
-                    "Регистрация",
-                    "Кто угодно",
-                    "Рекрутер",
-                    "Только после проверки",
-                ],
-                [
-                    "Доверие",
-                    "Отзывы (накрутка)",
-                    "Резюме",
-                    "Объективные результаты",
-                ],
-                ["Архитектурное мышление", "Нет", "Нет", "Да"],
-                ["Ревью кода ИИ", "Нет", "Нет", "Да"],
-                ["Скорость найма", "2 недели", "2 недели", "1–2 дня"],
-                [
-                    "Комиссия с заказчика",
-                    "5–20%",
-                    "Подписка",
-                    "0 ₽ · 7% с исполнителя",
-                ],
-            ]
-                .map(
-                    ([l, a, b, c]) =>
-                        `<div class="compare-row"><div class="label">${l}</div><div class="cell">${a}</div><div class="cell">${b}</div><div class="cell verum">${c}</div></div>`,
-                )
-                .join("")}
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="wrap"><div class="divider"></div></div>
 
     <section class="section">
       <div class="wrap">
@@ -6988,22 +6688,14 @@
         </div>
         <div class="stats-grid">
           <div class="stat-card" data-reveal data-delay="1" data-stat>
-            <div class="sparkline">${sparkSvg("up")}</div>
             <div class="n"><span class="counter-value" data-count="78" data-suffix="%">0%</span></div>
             <div class="l">разработчиков считают, что технические тесты не соответствуют реальным рабочим задачам</div>
           </div>
-          <div class="stat-card" data-reveal data-delay="2" data-stat>
-            <div class="sparkline">${sparkSvg("up")}</div>
-            <div class="n"><span class="counter-value" data-count="96" data-suffix="%">0%</span></div>
-            <div class="l">считают, что решение проблем должно значить больше, чем запоминание информации</div>
-          </div>
           <div class="stat-card" data-reveal data-delay="3" data-stat>
-            <div class="sparkline">${sparkSvg("default")}</div>
             <div class="n"><span class="counter-value" data-count="66" data-suffix="%">0%</span></div>
             <div class="l">предпочитают оценку на основе практических задач из реальной работы</div>
           </div>
           <div class="stat-card" data-reveal data-delay="4" data-stat>
-            <div class="sparkline">${sparkSvg("down")}</div>
             <div class="n"><span class="counter-value" data-count="74" data-suffix="%">0%</span></div>
             <div class="l">говорят, что им трудно найти работу в IT, несмотря на рост найма</div>
           </div>
@@ -7011,27 +6703,7 @@
       </div>
     </section>
 
-    <section class="section bg-alt">
-      <div class="wrap"><div class="split">
-        <div data-reveal="left">
-          <span class="eyebrow" style="display:block;margin-bottom:16px">Совместимость с ATS</span>
-          <h2 class="display" style="margin-bottom:20px" data-words>Не заменяем — дополняем</h2>
-          <p class="lede" style="margin-bottom:20px">Хантфлоу, Поток и другие ATS помогают рекрутерам управлять процессом
-            найма. Мы делаем то, чего они не делают — проверяем реальные инженерные навыки и работу с ИИ.</p>
-          <p class="lede">Результаты теста Верум можно встроить в вашу воронку найма.
-            Рекрутер получает карточку с баллами по трём этапам и ссылкой на транскрипт — без дополнительной интеграции.</p>
-        </div>
-        <div class="gradient-border" data-reveal="right" data-delay="2">
-          <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);margin-bottom:16px">Что добавляет Верум к ATS</div>
-          <div class="extract" style="margin-bottom:0">
-            <div class="extract-row" style="padding:12px 0;border-bottom:1px solid var(--line)"><span class="k">Архитектурное мышление</span><span class="v">балл + транскрипт</span></div>
-            <div class="extract-row" style="padding:12px 0;border-bottom:1px solid var(--line)"><span class="k">Ревью кода ИИ</span><span class="v">найденные дефекты</span></div>
-            <div class="extract-row" style="padding:12px 0;border-bottom:1px solid var(--line)"><span class="k">Адаптация к требованиям</span><span class="v">обоснование решений</span></div>
-            <div class="extract-row" style="padding:12px 0"><span class="k">Рекомендация</span><span class="v" style="color:var(--accent)">пригласить / отсеять</span></div>
-          </div>
-        </div>
-      </div></div>
-    </section>
+    <div class="wrap"><div class="divider"></div></div>
 
     <section class="section">
       <div class="wrap">
@@ -7058,69 +6730,6 @@
               за результат, а не за красивую строчку в резюме.</div>
             <div class="author"><div class="avatar sm">ДЕ</div><div><div class="author-name">Дмитрий Егоров</div><div class="author-role">Технический директор, «Гранит»</div></div></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section bg-alt">
-      <div class="wrap">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow">Тарифы</span>
-          <h2 class="display" data-words>Прозрачная экономика без скрытых платежей</h2>
-          <p class="lede">Публикация заказа и базовый подбор — бесплатно. Комиссия удерживается
-            только при закрытии сделки. Расширенный подбор — по желанию.</p>
-        </div>
-        <div class="pricing-grid">
-          ${pricingCardHtml({
-              label: "Заказчику · базовый",
-              price: "0 ₽",
-              unit: "за заказ",
-              desc: "Автоматический подбор на основе афиши. Подходит для типовых задач с понятным стеком.",
-              list: [
-                  "Разбор афиши и определение требований",
-                  "Шортлист до 3 специалистов",
-                  "Прозрачная причина совпадения",
-                  "Прямой чат с кандидатами",
-              ],
-              cta: "Разместить заказ",
-              role: "client",
-              ghost: true,
-              delay: 1,
-          })}
-          ${pricingCardHtml({
-              label: "Заказчику · расширенный",
-              price: "4 900 ₽",
-              unit: "за заказ",
-              featured: true,
-              desc: "Глубокий подбор с полной аналитикой по каждому кандидату. Для задач, где важна точность попадания.",
-              list: [
-                  "Всё из базового тарифа",
-                  "Шортлист до 10 специалистов",
-                  "Детальная аналитика по каждому профилю",
-                  "Гарантия замены · 14 дней",
-                  "Приоритетная поддержка",
-              ],
-              cta: "Выбрать расширенный",
-              role: "client",
-              delay: 2,
-          })}
-          ${pricingCardHtml({
-              label: "Специалисту",
-              price: "0 ₽",
-              unit: "за профиль",
-              desc: "Сборка профиля, участие в подборках и переписка с заказчиками — бесплатно.",
-              list: [
-                  "Анализ GitHub-портфолио",
-                  "Три этапа проверки",
-                  "Попадание в подборки заказчиков",
-                  "Комиссия — 7% с закрытой сделки",
-                  "Никаких абонентских платежей",
-              ],
-              cta: "Собрать профиль",
-              role: "specialist",
-              ghost: true,
-              delay: 3,
-          })}
         </div>
       </div>
     </section>
@@ -7194,9 +6803,6 @@
                 });
             }
 
-            /* ============================================================================
-   About
-   ============================================================================ */
             function viewAbout() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -7276,9 +6882,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   How it works
-   ============================================================================ */
             function viewHow() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -7365,9 +6968,6 @@
     <div class="faq-a"><div class="faq-a-inner">${a}</div></div></div>`;
             }
 
-            /* ============================================================================
-   Levels
-   ============================================================================ */
             function viewLevels() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -7423,9 +7023,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Pricing
-   ============================================================================ */
             function viewPricing() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -7575,9 +7172,6 @@
                 update();
             }
 
-            /* ============================================================================
-   Clients
-   ============================================================================ */
             function viewClients() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -7651,9 +7245,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Specialists
-   ============================================================================ */
             function viewSpecialists() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -7713,9 +7304,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   FAQ
-   ============================================================================ */
             function viewFaq() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -7767,9 +7355,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Blog
-   ============================================================================ */
             function viewBlog() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -7805,9 +7390,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Contacts
-   ============================================================================ */
             function viewContacts() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -7844,9 +7426,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Terms / Privacy
-   ============================================================================ */
             function viewTerms() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -7905,9 +7484,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Cases
-   ============================================================================ */
             function viewCases() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -7963,9 +7539,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Partners
-   ============================================================================ */
             function viewPartners() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -8009,9 +7582,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Press
-   ============================================================================ */
             function viewPress() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -8048,9 +7618,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Careers
-   ============================================================================ */
             function viewCareers() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -8086,9 +7653,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Status
-   ============================================================================ */
             function viewStatus() {
                 const services = [
                     { t: "Веб-приложение", u: "100%" },
@@ -8145,9 +7709,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Help
-   ============================================================================ */
             function viewHelp() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -8186,9 +7747,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Changelog
-   ============================================================================ */
             function viewChangelog() {
                 return `
   <div class="screen" style="min-height:auto">
@@ -8215,9 +7773,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Roadmap
-   ============================================================================ */
             function viewRoadmap() {
                 const statusMap = {
                     done: { label: "готово", cls: "mid" },
@@ -8261,9 +7816,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Auth
-   ============================================================================ */
             let authLocal = {
                 tab: "register",
                 role: "specialist",
@@ -8328,9 +7880,6 @@
   </div>`;
             }
 
-            /* ============================================================================
-   Dashboard
-   ============================================================================ */
             function viewDashboard() {
                 if (!state.user) return viewAuth();
                 return state.role === "client"
@@ -8627,9 +8176,6 @@
     </div>`;
             }
 
-            /* ----------------------------------------------------------------------------
-   Client dash
-   ---------------------------------------------------------------------------- */
             function viewClientDash() {
                 const u = state.user;
                 const orders =
@@ -8798,9 +8344,6 @@
                 });
             }
 
-            /* ----------------------------------------------------------------------------
-   Wizard
-   ---------------------------------------------------------------------------- */
             const wizardState = {
                 step: 0,
                 title: "Переписать личный кабинет на React",
@@ -8934,9 +8477,6 @@
                 });
             }
 
-            /* ----------------------------------------------------------------------------
-   Kanban (mouse + touch)
-   ---------------------------------------------------------------------------- */
             function initKanban() {
                 const kanban = $("#kanban");
                 if (!kanban) return;
@@ -8958,8 +8498,6 @@
                         dragged = null;
                         updateKanbanCounts();
                     });
-
-                    // Touch fallback
                     card.addEventListener(
                         "touchstart",
                         (e) => {
@@ -8984,7 +8522,6 @@
                         },
                         { passive: false },
                     );
-
                     card.addEventListener(
                         "touchmove",
                         (e) => {
@@ -9015,7 +8552,6 @@
                         },
                         { passive: false },
                     );
-
                     card.addEventListener("touchend", (e) => {
                         if (!ghost || !dragged) return;
                         const t = e.changedTouches[0];
@@ -9068,9 +8604,6 @@
                 });
             }
 
-            /* ----------------------------------------------------------------------------
-   Activity ticker — periodically appends new items
-   ---------------------------------------------------------------------------- */
             function initActivityTicker() {
                 const feed = $("#activity-feed");
                 if (!feed) return;
@@ -9097,9 +8630,6 @@
                 }, 12000);
             }
 
-            /* ----------------------------------------------------------------------------
-   Modal flows
-   ---------------------------------------------------------------------------- */
             function openFillProfileModal() {
                 openModal(`
     <div class="modal-head"><h3>Заполнить профиль</h3><button class="modal-close" data-modal-close>×</button></div>
@@ -9323,9 +8853,6 @@
   `);
             }
 
-            /* ============================================================================
-   Scroll-based meaningful animations
-   ============================================================================ */
             function initScrollReveal() {
                 const els = $$("[data-reveal]");
                 if (!els.length) return;
@@ -9350,7 +8877,6 @@
                 });
             }
 
-            /* Word-by-word heading reveal */
             function initWordReveal() {
                 $$("[data-words]").forEach((el) => {
                     if (el.dataset.wordsDone) return;
@@ -9579,9 +9105,6 @@
                 );
             }
 
-            /* ============================================================================
-   Bind
-   ============================================================================ */
             function bind() {
                 $$("[data-drawer-open]").forEach((el) =>
                     el.addEventListener("click", toggleDrawer),
@@ -9963,9 +9486,6 @@
                 });
             }
 
-            /* ----------------------------------------------------------------------------
-   Global: scroll progress, back-to-top, tooltips (static position), keyboard
-   ---------------------------------------------------------------------------- */
             function initGlobalAnimations() {
                 const sp = $("#scroll-progress");
                 if (sp) {
@@ -9996,7 +9516,6 @@
                     );
                 }
 
-                /* Static tooltips — only on devices with a pointer (mouse) */
                 if (
                     window.matchMedia("(hover: hover) and (pointer: fine)")
                         .matches
@@ -10020,7 +9539,6 @@
                     });
                 }
 
-                /* Keyboard */
                 document.addEventListener("keydown", (e) => {
                     const tag = (e.target.tagName || "").toLowerCase();
                     const isInput =
@@ -10076,7 +9594,6 @@
                     }
                 });
 
-                /* Resize listener — re-render on orientation changes so layout fixes */
                 let lastWidth = window.innerWidth;
                 window.addEventListener(
                     "resize",
@@ -10089,9 +9606,6 @@
                 );
             }
 
-            /* ============================================================================
-   Init
-   ============================================================================ */
             (function init() {
                 setTheme(getTheme());
                 if (state.user && state.view === "landing")
