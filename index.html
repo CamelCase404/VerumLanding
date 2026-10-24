@@ -4849,6 +4849,366 @@
                     transform: none !important;
                 }
             }
+            /* ============================================================
+               MOBILE CENTERING FIX — добавляет центрирование и убирает
+               лишние пустоты справа на маленьких экранах
+               ============================================================ */
+
+            /* 1. Глобально: всё центрируется, ничего не вылезает */
+            html,
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+            #app,
+            .screen {
+                width: 100%;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+            /* 2. Контейнеры — симметричные отступы, автоцентровка */
+            .wrap,
+            .wrap-narrow,
+            .wrap-wide {
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+
+            /* 3. Все ряды переносятся и центрируются */
+            .row,
+            .row-between,
+            .row-wrap {
+                flex-wrap: wrap;
+            }
+            @media (max-width: 640px) {
+                .row-between {
+                    justify-content: flex-start;
+                    gap: 10px;
+                }
+                /* Секционные заголовки — по центру на мобильных */
+                .section-head {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: left;
+                    width: 100%;
+                }
+                .section-head.center {
+                    text-align: center;
+                }
+                .section-head h1,
+                .section-head h2,
+                .section-head .lede,
+                .section-head .lede-lg,
+                .section-head .eyebrow {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                /* Карточки на всю ширину, без прижатия */
+                .card,
+                .stage,
+                .level,
+                .testimonial,
+                .member,
+                .stat-card,
+                .pricing-card,
+                .blog-card,
+                .calculator,
+                .cta-band,
+                .order-mock,
+                .gradient-border,
+                .empty-state {
+                    width: 100%;
+                    max-width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+                /* Внутренние заголовки карточек — не разъезжаются */
+                .card-head {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 8px;
+                }
+                .card-head h3,
+                .card-head .sub {
+                    width: 100%;
+                }
+
+                /* Строки ключ-значение — переносятся, значение под ключом */
+                .extract-row {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 4px;
+                    text-align: left;
+                }
+                .extract-row .v {
+                    text-align: left;
+                    width: 100%;
+                }
+
+                /* Матчи — аватар + текст + скор, кнопки на всю ширину */
+                .match {
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                }
+                .match .avatar {
+                    margin-top: 2px;
+                }
+                .match-info {
+                    flex: 1 1 calc(100% - 60px);
+                }
+                .match-score {
+                    margin-left: auto;
+                }
+                .match .btn,
+                .match .btn-icon {
+                    flex: 1 1 auto;
+                }
+
+                /* Офферы — вертикально */
+                .offer {
+                    flex-direction: column;
+                    align-items: stretch;
+                    text-align: left;
+                }
+                .offer > div {
+                    text-align: left !important;
+                }
+
+                /* Профиль-статус — вертикально, кнопка на всю ширину */
+                .profile-status {
+                    flex-direction: column;
+                    align-items: stretch;
+                }
+                .profile-status .btn {
+                    width: 100%;
+                }
+
+                /* Комиссия — вертикально */
+                .commission-notice {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                /* Кольцо — по центру */
+                .ring-wrap {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+                .ring-meta {
+                    text-align: center;
+                }
+
+                /* Кнопки в hero — на всю ширину */
+                .hero-cta {
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .hero-cta > * {
+                    width: 100%;
+                }
+
+                /* Статистика в hero — ровно 2 колонки */
+                .hero-meta {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 16px;
+                    width: 100%;
+                }
+                .hero-stat {
+                    flex: none;
+                }
+
+                /* Все grid'ы — 1 колонка, элементы на всю ширину */
+                .stats-grid,
+                .blog-grid,
+                .team,
+                .stages,
+                .levels,
+                .testimonials,
+                .pricing-grid,
+                .skill-grid,
+                .metrics,
+                .contact-grid,
+                .footer-grid,
+                .role-grid,
+                .compare-cards,
+                .kanban {
+                    grid-template-columns: 1fr !important;
+                    width: 100%;
+                }
+                .footer-grid > * {
+                    grid-column: auto !important;
+                }
+            }
+
+            /* 4. Сравнительные таблицы — на мобильных превращаем в карточки,
+                  чтобы не было горизонтального скролла и «прижатия влево» */
+            @media (max-width: 640px) {
+                .compare {
+                    overflow: visible;
+                }
+                .compare-scroll {
+                    overflow: visible;
+                }
+                .compare-head {
+                    display: none;
+                }
+                .compare-row {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    gap: 6px;
+                    min-width: 0 !important;
+                    padding: 14px 16px;
+                    border-bottom: 1px solid var(--line);
+                }
+                .compare-row:last-child {
+                    border-bottom: none;
+                }
+                .compare-row .label {
+                    font-weight: 600;
+                    color: var(--ink);
+                    font-size: 13.5px;
+                    margin-bottom: 4px;
+                }
+                .compare-row .cell {
+                    text-align: left;
+                    font-size: 13px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    gap: 10px;
+                    padding: 4px 0;
+                    border-top: 1px dashed var(--line);
+                }
+                .compare-row .cell::before {
+                    content: attr(data-label);
+                    color: var(--ink-3);
+                    font-size: 12px;
+                    font-weight: 500;
+                    flex-shrink: 0;
+                }
+                .compare-row .cell.verum {
+                    background: var(--accent-soft);
+                    border-radius: 6px;
+                    padding: 8px 10px;
+                    margin: 4px 0 0;
+                    text-align: left;
+                }
+                .compare-row .cell.verum::before {
+                    color: var(--accent);
+                }
+
+                /* Модалка сравнения карточек — 1 колонка */
+                .compare-cards {
+                    grid-template-columns: 1fr !important;
+                }
+            }
+
+            /* 5. Тулбар — все элементы на всю ширину */
+            @media (max-width: 640px) {
+                .toolbar {
+                    flex-direction: column;
+                    align-items: stretch;
+                }
+                .toolbar .search-bar,
+                .toolbar .sort-select,
+                .toolbar .filter-chip {
+                    width: 100%;
+                    max-width: 100%;
+                    min-width: 0;
+                }
+                .search-bar {
+                    max-width: 100% !important;
+                }
+
+                /* Кнопки «Назад/Далее» в визарде — на всю ширину */
+                #wiz-prev,
+                #wiz-next {
+                    width: 100%;
+                }
+                .row.gap-12:has(#wiz-prev) {
+                    flex-direction: column-reverse;
+                }
+
+                /* Футер — колонки по центру */
+                .footer-col a {
+                    text-align: left;
+                }
+                .footer-bottom {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                /* Контакты — по центру текста */
+                .contact-info-item {
+                    padding: 16px 0;
+                }
+
+                /* Dash сайдбар — табы по центру */
+                .side-nav {
+                    justify-content: flex-start;
+                }
+
+                /* Табы на мобильных не переносятся, а скроллятся */
+                .tabs {
+                    width: 100%;
+                }
+
+                /* Кнопки в модалке — на всю ширину */
+                .modal-foot .btn {
+                    width: 100%;
+                }
+
+                /* CTA-band — кнопки на всю ширину */
+                .cta-band > div:last-child {
+                    width: 100%;
+                    flex-direction: column;
+                }
+                .cta-band .btn {
+                    width: 100%;
+                }
+
+                /* Kanban — карточки по центру */
+                .kanban-col {
+                    width: 100%;
+                }
+            }
+
+            /* 6. Мелкие фиксы для очень узких экранов */
+            @media (max-width: 380px) {
+                .hero-meta {
+                    grid-template-columns: 1fr;
+                }
+                .compare-row .cell {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+
+            /* 7. Принудительная центровка всего контента в .dash-main */
+            .dash-main {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* 8. Убираем любые горизонтальные оверфлоу */
+            * {
+                min-width: 0;
+            }
+            img,
+            svg,
+            canvas,
+            video {
+                max-width: 100%;
+                height: auto;
+            }
         </style>
     </head>
     <body>
