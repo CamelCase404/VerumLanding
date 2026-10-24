@@ -5209,6 +5209,57 @@
                 max-width: 100%;
                 height: auto;
             }
+            /* ============================================================
+               КРАСИВЫЙ HERO-META НА МОБИЛЬНЫХ
+               ============================================================ */
+            @media (max-width: 640px) {
+                .hero-meta {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 0;
+                    width: 100%;
+                    margin-top: 32px;
+                    padding-top: 24px;
+                    border-top: 1px solid var(--line);
+                }
+
+                .hero-stat {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 16px;
+                    padding: 16px 0;
+                    border-bottom: 1px solid var(--line);
+                    flex: none;
+                    width: 100%;
+                }
+
+                .hero-stat:last-child {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+
+                .hero-stat .n {
+                    font-size: 22px;
+                    margin-bottom: 0;
+                    flex-shrink: 0;
+                    text-align: left;
+                    min-width: 90px;
+                }
+
+                .hero-stat .l {
+                    font-size: 13px;
+                    text-align: right;
+                    line-height: 1.4;
+                    color: var(--ink-2);
+                }
+
+                /* Убираем <br> в описаниях на мобилке, чтобы текст шел в одну строку */
+                .hero-stat .l br {
+                    display: none;
+                }
+            }
         </style>
     </head>
     <body>
